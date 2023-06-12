@@ -1,0 +1,105 @@
+.app-container {
+    .add-new {
+        // display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .group-btns {
+            display: flex;
+            gap: 10px;
+
+            i {
+                padding: 0 5px;
+            }
+        }
+    }
+
+    .sort-header {
+        display: flex;
+        justify-content: space-between;
+
+        i {
+            cursor: pointer;
+            padding: 0 2px;
+        }
+    }
+
+    .login-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+        .title {
+            text-align: center;
+            font-size: 23px;
+            font-weight: 600;
+            padding: 30px;
+        }
+
+        .text {
+            font-weight: 600;
+            padding-bottom: 3px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        input {
+            padding: 10px;
+            outline: none;
+            margin-bottom: 7px;
+            border: 1px solid #dedede;
+            border-radius: 5px;
+            width: 100%;
+
+            &:hover {
+                background-color: #dedede;
+            }
+        }
+
+        .btn-login {
+            outline: none;
+            border-radius: 5px;
+            border: none;
+
+            padding: 15px;
+            color: #ccc;
+            font-weight: 600;
+
+            &.active {
+                background-color: #f27474;
+                color: #fff;
+                font-weight: bold;
+            }
+
+            &:disabled {
+                cursor: not-allowed;
+            }
+        }
+
+        .go-back {
+            text-align: center;
+            margin-top: 30px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .input-passwod {
+            position: relative;
+
+            i {
+                position: absolute;
+                top: 16px;
+                right: 13px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.customize-table{
+    overflow-x:auto ;
+}
